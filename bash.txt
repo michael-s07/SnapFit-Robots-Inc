@@ -33,4 +33,57 @@ Changes to be committed:
         new file:   instructions.txt
         new file:   warranty.txt
 
+$ git commit -m 'Files add to stage area'
+[master (root-commit) 7807fa0] Files add to stage area
+ 3 files changed, 70 insertions(+)
+ create mode 100644 disclaimer.txt
+ create mode 100644 instructions.txt
+ create mode 100644 warranty.txt
+$ git log
+commit 7807fa0fea1873ea419a9298f5b2522fec12abdc
+Author: codecademy <ccuser@codecademy.com>
+Date:   Fri Jan 7 07:58:17 2022 +0000
+
+    Files add to stage area
+$ git add disclaimer.txt
+$ git commit -m 'update on  the disclaimer file, new row added'
+[master 7ae609a] update on  the disclaimer file, new row added
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+$ git log
+commit 7ae609a845bd8ac5fb9b967ee1095324179969e8
+Author: codecademy <ccuser@codecademy.com>
+Date:   Fri Jan 7 08:01:00 2022 +0000
+
+    update on  the disclaimer file, new row added
+
+commit 7807fa0fea1873ea419a9298f5b2522fec12abdc
+Author: codecademy <ccuser@codecademy.com>
+Date:   Fri Jan 7 07:58:17 2022 +0000
+
+    Files add to stage area
+$ git add instruction.txt
+fatal: pathspec 'instruction.txt' did not match any files
+$ git add instructions.txt
+$ git add warranty.txt
+$ git commit -m 'New row added to each files'
+[master d4509ee] New row added to each files
+ 2 files changed, 3 insertions(+)
+$ git log
+commit d4509ee639d8e11794e72b8e977a6ac02e58a566
+Author: codecademy <ccuser@codecademy.com>
+Date:   Fri Jan 7 08:06:28 2022 +0000
+
+    New row added to each files
+
+commit 7ae609a845bd8ac5fb9b967ee1095324179969e8
+Author: codecademy <ccuser@codecademy.com>
+Date:   Fri Jan 7 08:01:00 2022 +0000
+
+    update on  the disclaimer file, new row added
+
+commit 7807fa0fea1873ea419a9298f5b2522fec12abdc
+Author: codecademy <ccuser@codecademy.com>
+Date:   Fri Jan 7 07:58:17 2022 +0000
+
+    Files add to stage area
 $ 
